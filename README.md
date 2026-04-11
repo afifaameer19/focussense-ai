@@ -80,25 +80,33 @@ focussense-ai/
 1. Clone Repository
 
 bash
+```
 git clone https://github.com/your-username/focussense-ai.git
 cd focussense-ai
+``` 
 
 ### 2. Create Virtual Environment
+
 bash
+```
 python -m venv .venv
 .venv\Scripts\activate   # Windows
-
+```
 3. Install Dependencies
+
 bash
+```
 pip install -r requirements.txt
+```
 
 
 Usage
 Step 1: Run Activity Tracker
+
 bash
+```
 python src/collector.py
-
-
+```
 * Tracks keyboard & mouse activity
 * Saves data every 10 seconds
 
@@ -107,30 +115,31 @@ Step 2: Generate Features
 
 Run the notebook:
 
+bash
+```
 notebooks/feature_engineering.ipynb
-
+```
 * Converts raw logs → ML dataset
-
 
 Step 3: Train Model
 
 bash
+```
 python src/model.py
-
-
+```
 * Trains Logistic Regression & Random Forest
 * Evaluates using:
-
   * Precision
   * Recall
   * F1-score
   * ROC-AUC
 
-
- Step 4: Run Dashboard
+Step 4: Run Dashboard
 
 bash
+```
 streamlit run app/dashboard.py
+```
 
 
 Focus Score Logic
@@ -149,7 +158,7 @@ Formula:
 Focus Score = (1 - Distraction Probability) × 100
 
 
-## 📈 Example Features
+# Example Features
 
 | minute | actions | idle_count | mouse_ratio |
 | ------ | ------- | ---------- | ----------- |
@@ -186,5 +195,6 @@ Privacy Considerations
 
 
 Author
+
 AFIFA AMEER
 
