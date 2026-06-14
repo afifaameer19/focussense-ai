@@ -61,12 +61,11 @@ focussense-ai/
 │   └── features.csv
 │
 ├── notebooks/
-│   └── feature_engineering.ipynb
+│   └── model.ipynb
 │
 ├── src/
 │   ├── collector.py
 │   ├── features.py
-│   ├── model.py
 │
 ├── app/
 │   └── dashboard.py
